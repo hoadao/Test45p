@@ -1,0 +1,27 @@
+<table style="height: 400px; width: 804px">
+  <tr>
+    <th colspan="2" class="header" [style.height.px]="headerHeight">
+      <label>
+        <input type="text" [value]='headerHeight'>
+      </label>
+      <button type="button" (click)="onClick1()">+</button>
+      <button type="button" (click)="onClick2()">-</button>
+    </th>
+  </tr>
+  <tr>
+    <td class="main" [style.width.px]="mainWidth">
+      <label>
+        <input type="text" [value]='mainWidth'>
+      </label>
+      <button type="button" (click)="onClick3()">+</button>
+      <button type="button" (click)="onClick4()">-</button>
+    </td>
+    <td class="sidebar" [style.width.px]="sidebarWidth">
+      <label>
+        <input type="text" [value]='sidebarWidth'>
+      </label>
+      <button type="button" (click)="onClick5()">+</button>
+      <button type="button" (click)="onClick6()">-</button>
+    </td>
+  </tr>
+</table>

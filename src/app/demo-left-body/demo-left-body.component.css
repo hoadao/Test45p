@@ -1,0 +1,12 @@
+.left {
+    width: 400px;
+    height: 350px;
+    border: solid 1px;
+    position: relative;
+    float: left;
+    align-content: center;
+
+}
+input{
+    text-align: center;
+}

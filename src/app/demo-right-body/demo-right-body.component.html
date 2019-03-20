@@ -1,3 +1,7 @@
-<p>
-  demo-right-body works!
-</p>
+<div class="right" [style.width.px]="rightWidth" [style.height.px]="rightHeight">
+  <label>
+    <input type="text" [value]='rightHeight'>
+  </label>
+  <button  (click)="increaseRightWidth(true)">+</button>
+  <button  (click)="decreaseRightWidth(false)">-</button>
+</div>

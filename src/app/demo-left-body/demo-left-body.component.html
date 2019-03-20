@@ -1,3 +1,8 @@
-<p>
-  demo-left-body works!
-</p>
+<div class="left" [style.width.px]="leftWidth" [style.height.px]="leftHeight">
+  <label>
+    <input type="text" [value]='leftHeight'>
+  </label>
+  <button (click)="increaseLeftWidth()">+</button>
+  <button (click)="decreaseLeftWidth()">-</button>
+</div>
+<app-demo-right-body [parentHeight]= "parentHeight" [rightWidth]="rightWidth" [rightHeight]="rightHeight" [leftWidth]="leftWidth" (cliked)="parentClick($event)"></app-demo-right-body>

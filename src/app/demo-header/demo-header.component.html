@@ -1,3 +1,8 @@
-<p>
-  demo-header works!
-</p>
+<div class="header" [style.height.px]="headerHeight">
+  <label>
+    <input type="text" [value]='headerHeight'>
+  </label>
+  <button (click)="increaseHeaderHeight()">+</button>
+  <button (click)="decreaseHeaderHeight()">-</button>
+</div>
+<app-demo-left-body [parentHeight]= "config.parentHeight" [leftHeight]="config.leftHeight" [rightHeight]="config.rightHeight"></app-demo-left-body>
